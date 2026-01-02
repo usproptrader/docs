@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Low-Float Biotech Stocks Tracker (Dec 2025)</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacCSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1a3c5e;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      background: white;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: auto;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #1a3c5e;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f9ff;
+    }
+
+    tr:hover {
+      background-color: #e6f3ff;
+    }
+
+    .float-col {
+      text-align: right;
+      font-weight: bold;
+    }
+
+    /* Responsive adjustments */
+    @media screen and (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+
+      tr {
+        margin-bottom: 1.5rem;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      }
+
+      td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+      }
+
+      td:before {
+        position: absolute;
+        top: 12px;
+        left: 15px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        content: attr(data-label);
+        color: #1a3c5e;
+      }
+
+      .float-col:before {
+        content: "Approx Float (M shares)";
+      }
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Low-Float Biotech Stocks (NASDAQ & NYSE) - December 2025</h1>
+
+  <p class="intro">
+    Curated list of low-float (< ~15M shares) biotech and biotech-related stocks.<br>
+    Floats are approximate — always verify latest data via Yahoo Finance, Finviz, or SEC filings.<br>
+    <strong>High risk / high volatility</strong> — not investment advice.
+  </p>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Ticker</th>
+          <th>Exchange</th>
+          <th class="float-col">Approx Float (M shares)</th>
+          <th>Company Focus / Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Ticker">SNGX</td>
+          <td data-label="Exchange">NASDAQ</td>
+          <td data-label="Approx Float (M shares)" class="float-col">3-5</td>
+          <td>Rare diseases / immunotherapy (Soligenix) - ultra-low float, frequent penny runner</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">BTAI</td>
+          <td data-label="Exchange">NASDAQ</td>
+          <td data-label="Approx Float (M shares)" class="float-col">5</td>
+          <td>Neuroscience / oncology (BioXcel Therapeutics) - Phase 3 potential, high volatility</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">TNXP</td>
+          <td data-label="Exchange">NASDAQ</td>
+          <td data-label="Approx Float (M shares)" class="float-col">7-9</td>
+          <td>CNS / infectious diseases (Tonix Pharmaceuticals) - government contracts, surged in 2025</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">VCNX</td>
+          <td data-label="Exchange">NASDAQ</td>
+          <td data-label="Approx Float (M shares)" class="float-col">Low (penny)</td>
+          <td>Neurology / oncology (Vaccinex) - recent $60M Alzheimer's trial financing</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">COYA</td>
+          <td data-label="Exchange">NASDAQ</td>
+          <td data-label="Approx Float (M shares)" class="float-col">Low</td>
+          <td>Neurodegenerative / ALS (Coya Therapeutics) - recent CTA acceptance</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">IVVD</td>
+          <td data-label="Exchange">NASDAQ</td>
+          <td data-label="Approx Float (M shares)" class="float-col">Low</td>
+          <td>Infectious diseases / vaccines (Invivyd) - fast-track designations</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">AVIR</td>
+          <td data-label="Exchange">NASDAQ</td>
+          <td data-label="Approx Float (M shares)" class="float-col">Low</td>
+          <td>Antiviral therapies (Aviragen) - clinical updates</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">NNVC</td>
+          <td data-label="Exchange">NASDAQ</td>
+          <td data-label="Approx Float (M shares)" class="float-col">~15</td>
+          <td>Antiviral platform (NanoViricides)</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">NCNA</td>
+          <td data-label="Exchange">NASDAQ</td>
+          <td data-label="Approx Float (M shares)" class="float-col">Very low</td>
+          <td>Oncology (NuCana) - high-volume spikes on catalysts</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">XRTX</td>
+          <td data-label="Exchange">NYSE</td>
+          <td data-label="Approx Float (M shares)" class="float-col">6.25</td>
+          <td>Kidney disease / rare disorders (XORTX Therapeutics)</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">ALUR</td>
+          <td data-label="Exchange">NYSE</td>
+          <td data-label="Approx Float (M shares)" class="float-col">6.83</td>
+          <td>Weight loss / obesity biotech (Allurion Technologies)</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">ANVS</td>
+          <td data-label="Exchange">NYSE</td>
+          <td data-label="Approx Float (M shares)" class="float-col">5-10</td>
+          <td>Neurodegenerative (Alzheimer's / Parkinson's) (Annovis Bio)</td>
+        </tr>
+        <tr>
+          <td data-label="Ticker">CVM</td>
+          <td data-label="Exchange">NYSE American</td>
+          <td data-label="Approx Float (M shares)" class="float-col">6.31</td>
+          <td>Cancer immunotherapy (CEL-SCI)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    Data approximate as of December 27, 2025 • High-risk speculative assets • For informational purposes only
+  </footer>
+
+</body>
+</html>
